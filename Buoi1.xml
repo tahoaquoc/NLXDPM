@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_kkgsMBeLEd60N8ipLbB6nA" name="Buoi1">
+  <packagedElement xmi:type="uml:Class" xmi:id="_JZfNQHCJEe65DZrcNik3VQ" name="Animal">
+    <ownedAttribute xmi:id="_JbFvwHCJEe65DZrcNik3VQ" name="madv" visibility="private" type="_JbQH0HCJEe65DZrcNik3VQ"/>
+    <ownedOperation xmi:id="_Jbh0oHCJEe65DZrcNik3VQ" name="eat" visibility="public" bodyCondition="_JbpwcHCJEe65DZrcNik3VQ">
+      <ownedRule xmi:id="_JbpwcHCJEe65DZrcNik3VQ">
+        <specification xmi:type="uml:LiteralString" xmi:id="_Jbv3EHCJEe65DZrcNik3VQ" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_Jb-gkHCJEe65DZrcNik3VQ" name="eat" type="_JcF1UHCJEe65DZrcNik3VQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_JbQH0HCJEe65DZrcNik3VQ" name="Integer"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_JcF1UHCJEe65DZrcNik3VQ" name="String"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JcPmUHCJEe65DZrcNik3VQ" name="Bird">
+    <generalization xmi:id="_JcVs8HCJEe65DZrcNik3VQ" general="_JZfNQHCJEe65DZrcNik3VQ"/>
+    <ownedAttribute xmi:id="_JceP0HCJEe65DZrcNik3VQ" name="mausac" visibility="private" type="_Jce24HCJEe65DZrcNik3VQ"/>
+    <ownedOperation xmi:id="_JcrEIHCJEe65DZrcNik3VQ" name="speak" visibility="public" bodyCondition="_JctgYHCJEe65DZrcNik3VQ">
+      <ownedRule xmi:id="_JctgYHCJEe65DZrcNik3VQ">
+        <specification xmi:type="uml:LiteralString" xmi:id="_JctgYXCJEe65DZrcNik3VQ" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_JcvVkHCJEe65DZrcNik3VQ" name="speak" type="_JcF1UHCJEe65DZrcNik3VQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Jce24HCJEe65DZrcNik3VQ" name="int"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Jc0OEHCJEe65DZrcNik3VQ" name="Mammals">
+    <generalization xmi:id="_Jc5GkHCJEe65DZrcNik3VQ" general="_JZfNQHCJEe65DZrcNik3VQ"/>
+    <ownedOperation xmi:id="_JdaD8HCJEe65DZrcNik3VQ" name="run" visibility="public" bodyCondition="_JdcgMHCJEe65DZrcNik3VQ">
+      <ownedRule xmi:id="_JdcgMHCJEe65DZrcNik3VQ">
+        <specification xmi:type="uml:LiteralString" xmi:id="_JdcgMXCJEe65DZrcNik3VQ" name="TemplateBody" value="%DefaultBody%"/>
+      </ownedRule>
+      <ownedParameter xmi:id="_JdeVYHCJEe65DZrcNik3VQ" name="run" type="_Jde8cHCJEe65DZrcNik3VQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Jde8cHCJEe65DZrcNik3VQ" name="boolean"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Jdj08HCJEe65DZrcNik3VQ" name="Crow" clientDependency="_JgS_4HCJEe65DZrcNik3VQ">
+    <generalization xmi:id="_JdoGYHCJEe65DZrcNik3VQ" general="_JcPmUHCJEe65DZrcNik3VQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Jd6aQHCJEe65DZrcNik3VQ" name="Ostrich">
+    <generalization xmi:id="_Jd_SwHCJEe65DZrcNik3VQ" general="_JcPmUHCJEe65DZrcNik3VQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JeQYgHCJEe65DZrcNik3VQ" name="Tiger">
+    <generalization xmi:id="_JeVRAHCJEe65DZrcNik3VQ" general="_Jc0OEHCJEe65DZrcNik3VQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Jem90HCJEe65DZrcNik3VQ" name="Bear">
+    <generalization xmi:id="_Jer2UHCJEe65DZrcNik3VQ" general="_Jc0OEHCJEe65DZrcNik3VQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_JfK-gHCJEe65DZrcNik3VQ" name="FlyBird">
+    <ownedOperation xmi:id="_Jf-PwHCJEe65DZrcNik3VQ" name="fly" visibility="public" isAbstract="true">
+      <ownedParameter xmi:id="_JgIn0HCJEe65DZrcNik3VQ" name="fly" type="_Jde8cHCJEe65DZrcNik3VQ" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_JgS_4HCJEe65DZrcNik3VQ" name="Realization_1" supplier="_JfK-gHCJEe65DZrcNik3VQ" client="_Jdj08HCJEe65DZrcNik3VQ"/>
+</uml:Model>
